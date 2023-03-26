@@ -1,0 +1,35 @@
+const mongoose = require("mongoose");
+
+const finalSchema = new mongoose.Schema({
+  email: String,
+  fname: String,
+  lname: String,
+  driverImg: String,
+  driverName: String,
+  drivingExperiance: String,
+  driverMobNo: Number,
+  charges: Number,
+  charge: Number,
+  hotel: String,
+  room: String,
+  stay: Number,
+  manageParking: String,
+  finalCost: Number,
+  carCompany: String,
+  carColor: String,
+  carModel: String,
+  carType: String,
+  carImg: String,
+  fuelType: String,
+  pickUpLocation: String,
+  dropLocation: String,
+  pickUpTime: String,
+  pickUpDate: String,
+  dropDate: String,
+  passangerCapacity: Number,
+  members: Number,
+  days: Number,
+  cardNo: String,
+});
+
+module.exports = mongoose.model("confirm-bookings", finalSchema);
